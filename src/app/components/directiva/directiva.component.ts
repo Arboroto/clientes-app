@@ -8,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class DirectivaComponent implements OnInit {
 
   listaCurso: string[] =['TypeScript', 'JavaScript', 'Java SE', 'C#', 'PHP'];
+  ocultar: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  public onClickButton(){
+    this.ocultar ? this.ocultar = false : this.ocultar = true
+  }
 }
